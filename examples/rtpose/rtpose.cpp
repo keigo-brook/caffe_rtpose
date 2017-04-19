@@ -466,6 +466,7 @@ void* getFrameFromCam(void *i) {
             }
             image_uchar_prev = image_uchar_orig;
             frame_counter++;
+            global.uistate.current_frame = frame_counter;
         }
 
         // TODO: The entire scaling code should be rewritten and better matched
